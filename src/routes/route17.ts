@@ -5,7 +5,7 @@ const route=Router();
 
 route.get('/nome',(req,res)=>
 {
-    res.send("adailson");
+    res.send("adailson alterado");
 });
 
 route.get('/2recebenumero/:numero',(req,res)=>
