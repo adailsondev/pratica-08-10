@@ -1,6 +1,5 @@
 import  express  from 'express';
 import rota from './routes/route17';//importando a rota pra usar
-import m_sistema from './routes/meusistema';
 
 import bodyParser from 'body-parser';//importando o body parser pra funcionar o post com json
 
@@ -13,7 +12,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //liberando o uso da rota com express
 app.use(rota);
-app.use(m_sistema);
 
 //colocando a resposta em json
 app.use(express.json);
@@ -26,4 +24,3 @@ app.listen(3000, () => {
     console.log('Servidor rodando');
 });
 
-//rota.get('/2recebenumero/:numero',(req,res)=>
